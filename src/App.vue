@@ -1,18 +1,24 @@
 <template>
   <div id="app">
-    <img width="25%" src="./assets/logo.png">
+    {{ store.counter }}
+    <img width="25%" src="./assets/logo.png" />
     <HelloWorld msg="Hello Vue in CodeSandbox!" />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld";
-
+import store from "./components/store";
 export default {
   name: "App",
   components: {
-    HelloWorld
-  }
+    HelloWorld,
+  },
+  data() {
+    return {
+      store: store,
+    };
+  },
 };
 </script>
 
