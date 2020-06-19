@@ -1,5 +1,5 @@
 let store = {
-    counter: 0,
+    counter: 10,
     increment() {
         this.counter++;
     }
